@@ -1,0 +1,19 @@
+body{
+    padding:20px;
+}
+.contentBox{
+    border:solid;
+    border-width: 2px;
+    overflow: hidden;
+}
+.contentBox h3{
+    text-align: center; 
+}
+.mainBox{
+    border:solid;
+    border-width: 2px;
+    overflow: hidden;
+}
+.mainBox h3{
+    text-align: center;
+}

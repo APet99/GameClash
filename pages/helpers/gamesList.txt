@@ -1,0 +1,10 @@
+Apex legends,              A game where champions are born and friendships die., ../images/Apex.jpg
+Call of Duty: Black Ops 4, The most popular choice amongst 10-13 year olds!, ../images/BlackOps4.jpg
+Ring of Elysium,           Often refered to as the game that is better than PUBG., ../images/ROE.jpg
+Fortnite,                  Why is this still a game?, ../images/fortniteCard.jpg
+Rocket League,             For the children. . ., ../images/RocketLeague.jpg
+Mario Kart 8,              For the moms. . ., ../images/MarioKart8.jpg
+Minecraft,                 For the adults. . ., ../images/MineCraft.jpeg
+NBA 2k19,                  For the kids that weren't good enough to play in college., ../images/2k19.jpg
+Madden 2019,               For the dads who are stuck in highschool., ../images/Madden19.jpg
+Super Smash Bros.,         For the juvenile delinquents., ../images/SuperSmash.png
