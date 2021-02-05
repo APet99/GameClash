@@ -1,0 +1,4 @@
+A working product!
+Login Feature to track game progress.
+Ability to view leaderbords.
+Team/Ladder features coming soon!

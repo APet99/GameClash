@@ -1,19 +1,51 @@
 body{
     padding:20px;
 }
-.contentBox{
-    border:solid;
+.row{
+    /* border:solid; */
+    /* border-width: 2px;
+    overflow: hidden; */
+}
+.col{
+    /* border:solid; */
+    /* border-width: 2px;
+    overflow: hidden; */
+}
+.card-block{
+    border-radius: 10px 10px 10px 10px;
+    height: 300px;
+    border-style: solid;
     border-width: 2px;
-    overflow: hidden;
+    box-shadow: 13px 7px 25px 7px rgba(54, 54, 54, 0.43);
 }
-.contentBox h3{
-    text-align: center; 
-}
-.mainBox{
-    border:solid;
-    border-width: 2px;
-    overflow: hidden;
-}
-.mainBox h3{
+h3{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-align: center;
+    overflow: hidden;
+    text-decoration: underline;
+}
+#video{
+    border-radius: 10px 10px 10px 10px;
+}
+#featGame{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-width: 2px;
+    border-style: solid;
+}
+.row #featGame{
+    display: block;
+    margin-left:15px;
+    margin-top:75px;
+}
+.col-3 p{
+    padding-top: 25px;
+    padding-right: 15px;
+}
+#myButtons{
+    margin-left: -37px;
+    margin-right: 3px;
+    margin-top: -10px;
+    overflow: hidden;
 }

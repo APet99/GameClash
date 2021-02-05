@@ -1,57 +1,30 @@
-/*background image of the entire site*/
-body {
-    
-    overflow: auto;        /* unknown if truly needed*/
-    position:relative;
-    background-color: #262626;
-    
-}
 
-/* The Login Pannel
-    contents:
-        -username and password field
-        -login button
-*/
-.inputFields{
-    position: relative;                /*does not move relative */
-    top:    3%;
-    left:   3%;
-    right:  55%;
-    bottom: 60%;
-    margin: 20px;
-    padding:5px 5px 100px 15px;
-    float: left;
-    border-radius: 15px;
-    background-color: white;
-    box-shadow: 5px 5px 5px rgb(61, 57, 56);
+.col-6{
+    padding: 30px;
 }
-.inputFields h1{
+h4{
     text-align: center;
+    font-size: 20px;
+    text-decoration-line: underline;
 }
+ .card{
+    width: 320px;
+    height: 260px;
 
-/* The FAQ Box
-    consist of questions and answers
-    should not move but the background scroll relatively for aestetic
-*/
-.FAQ{
-    position: relative;                  /*does not move relative to the background */
-    top:    3%;
-    left:   55%;
-    right:  3%;                      /*positioned 10px from right side*/
-    bottom: 60%;
-    margin: 20px;                      /*distance from edge*/
-    padding: 5px 5px 40px 5px; /*how big the box is */
-    float: right;                     /*pushed to rightmost side*/
-    border-radius: 15px;              /*rounded corners*/
-    background-color: white;          /*color of the box*/
-    
-    box-shadow: 5px 5px 5px rgb(61, 57, 56);    /*shadow effect*/
 }
-#signinHeader{
-    text-align: center;
+.card-block{
+    padding:10px;
+    border-radius: 10px 10px 10px 10px;
+    height: inherit;
+    width:inherit;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 13px 7px 25px 7px rgba(54, 54, 54, 0.43);
+    overflow: hidden;
+}
+form{
+    text-align: right;
 }
 input{
-    padding: 3px;
-    margin:10px;
-    position: relative;
+    width:215px;
 }

@@ -1,3 +1,5 @@
+<?php session_start(); ?>
+
 <link rel = "stylesheet" href = "../styles/headerBarStyle.css">
 <nav class="navbar navbar-default navbar-inverse" role="navigation">
   <div class="container-fluid">
@@ -15,61 +17,23 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav d-flex flex-row">
-        <li class><a href="/GameClash/pages/Home.php">Home</a></li>
-        <li><a href="../pages/AboutUs.php">About Us</a></li>
+        <li><a href="../pages/Home.php" id="webTitle">Game Clash</a></li>
+        <li><a href="#">About Us</a></li>
         <li><a href="../pages/Games.php">Games</a></li>
-        <li><a href="../pages/Team.php">Teams</a></li>
-        
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Leaderboards <span></span></a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="#">Player Leaderboards</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Team Leaderboards</a></li>
-          </ul>
-        </li>
+        <li><a href="#">Ladder</a></li>
+        <li><a href="../pages/Leaderboards.php">Leaderboards</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right flex-row">
-        <li><p class="navbar-text">Already have an account?</p></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Login</b></span></a>
-			<ul id="login-dp" class="dropdown-menu">
-				<li>
-					 <div class="row">
-							<div class="col-md-12">
-								Login via
-								<div class="social-buttons">
-									<a href="#" class="btn btn-fb"><i class="fa fa-facebook"></i> Facebook</a>
-									<a href="#" class="btn btn-tw"><i class="fa fa-twitter"></i> Twitter</a>
-								</div>
-                                or
-								 <form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
-										<div class="form-group">
-											 <label class="sr-only" for="exampleInputEmail2">Email address</label>
-											 <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Email address" required>
-										</div>
-										<div class="form-group">
-											 <label class="sr-only" for="exampleInputPassword2">Password</label>
-											 <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password" required>
-                                             <div class="help-block text-right"><a href="">Forget the password ?</a></div>
-										</div>
-										<div class="form-group">
-											 <button type="submit" class="btn btn-primary btn-block">Sign in</button>
-										</div>
-										<div class="checkbox">
-											 <label>
-											 <input type="checkbox"> keep me logged-in
-											 </label>
-										</div>
-								 </form>
-							</div>
-							<div class="bottom text-center">
-								New here ? <a href="#"><b>Sign Up</b></a>
-							</div>
-					 </div>
-				</li>
-			</ul>
-        </li>
+      <?php
+      if(isset($_SESSION["username"]) && $_SESSION['username'] != ''){?>
+        <li><a>Welcome, <?= $_SESSION['username'] ?> </a></li>
+        <li><a href = "../pages/helpers/logout.php">Logout</a></li>
+      <?php 
+      }else{ ?>
+        <li><p class ="navbar-text" overflow="hidden">Already have an account?</p></li>
+        <li><a href = "../pages/Login.php">Login</a></li><p> or </p>
+        <li><a href = "../pages/SignUp.php">Sign Up</a></li>
+      <?php } ?>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->

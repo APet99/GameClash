@@ -5,6 +5,14 @@ body{
     padding-right:40px;
     background-image: url("../images/bg.jpg");
 }
+#webTitle{
+ color:rgba(61, 240, 225, 0.73);  
+ font-size: 15px;
+ font-family: cursive; 
+}
+#webTitle:hover{
+    color:rgba(29, 117, 110, 0.89)
+}
 
 nav{
     box-shadow: 13px 7px 25px 7px rgba(0,0,0,0.73);
@@ -22,6 +30,9 @@ nav li a{
     height: 40px;
 }
 nav li{
+    display: inline-block;
+    margin-top:-28px;
+    margin-bottom: -50px;     
     height: inherit;
     padding-bottom: 20px;
     /* border-width:3px;
